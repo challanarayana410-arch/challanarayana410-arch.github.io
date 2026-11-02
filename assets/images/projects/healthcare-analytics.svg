@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+<title>PN-05 MedInsight Healthcare Analytics architecture</title>
+<desc>Blueprint schematic: a browser reaches a Next.js 14 frontend through an Nginx reverse proxy. The frontend calls a FastAPI backend, which uses PostgreSQL/TimescaleDB, Redis and ML models (Random Forest, SHAP). Readouts: 85.2% accuracy, 0.89 AUC-ROC, 50+ features.</desc>
+<defs>
+<style>
+text{font-family:"IBM Plex Mono",SFMono-Regular,Consolas,monospace;font-size:9px;letter-spacing:0.06em;text-transform:uppercase;fill:#EAF3FB}
+.s{fill:#EAF3FB;fill-opacity:0.7}
+.h{font-size:11px}
+.a{fill:#9FDBFF}
+.b{fill:#0D3B66;stroke:#EAF3FB;stroke-opacity:0.7;stroke-width:1}
+.k{fill:#0D3B66;stroke:#9FDBFF;stroke-width:1}
+.l{fill:none;stroke:#EAF3FB;stroke-opacity:0.7;stroke-width:1}
+.m{fill:none;stroke:#9FDBFF;stroke-width:1}
+</style>
+<pattern id="g1" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/></pattern>
+<pattern id="g2" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><polygon points="0,0 8,4 0,8" fill="#EAF3FB" fill-opacity="0.8"/></marker>
+<marker id="am" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><polygon points="0,0 8,4 0,8" fill="#9FDBFF"/></marker>
+</defs>
+<rect width="640" height="360" fill="#0D3B66"/>
+<rect width="640" height="360" fill="url(#g1)"/>
+<rect width="640" height="360" fill="url(#g2)"/>
+
+<rect x="16" y="16" width="608" height="20" class="l"/>
+<text x="26" y="30" class="h">PN-05 · MedInsight · Healthcare Analytics</text>
+
+<rect x="104" y="50" width="520" height="226" class="l" stroke-dasharray="5 3"/>
+<text x="116" y="66" class="s">Nginx · reverse proxy</text>
+
+<rect x="16" y="142" width="64" height="44" class="b"/>
+<text x="48" y="161" text-anchor="middle">Client</text>
+<text x="48" y="173" text-anchor="middle" class="s">Browser</text>
+
+<rect x="124" y="130" width="120" height="68" class="k"/>
+<text x="184" y="158" text-anchor="middle" class="h">Next.js 14</text>
+<text x="184" y="172" text-anchor="middle" class="s">Frontend</text>
+<text x="184" y="185" text-anchor="middle" class="s">React · TypeScript</text>
+
+<rect x="290" y="130" width="120" height="68" class="k"/>
+<text x="350" y="158" text-anchor="middle" class="h">FastAPI</text>
+<text x="350" y="172" text-anchor="middle" class="s">Backend</text>
+<text x="350" y="185" text-anchor="middle" class="s">Python 3.11 · REST</text>
+
+<rect x="470" y="72" width="134" height="52" class="b"/>
+<text x="537" y="94" text-anchor="middle">PostgreSQL</text>
+<text x="537" y="108" text-anchor="middle" class="s">TimescaleDB</text>
+
+<rect x="470" y="142" width="134" height="44" class="b"/>
+<text x="537" y="161" text-anchor="middle">Redis</text>
+<text x="537" y="174" text-anchor="middle" class="s">Cache · Sessions</text>
+
+<rect x="470" y="204" width="134" height="60" class="k"/>
+<text x="537" y="226" text-anchor="middle">ML models</text>
+<text x="537" y="240" text-anchor="middle" class="s">Random Forest</text>
+<text x="537" y="253" text-anchor="middle" class="s">SHAP explainer</text>
+
+<line x1="80" y1="164" x2="122" y2="164" class="m" marker-end="url(#am)"/>
+<line x1="244" y1="164" x2="288" y2="164" class="m" marker-end="url(#am)"/>
+<text x="266" y="156" text-anchor="middle" class="s">REST</text>
+<line x1="410" y1="164" x2="440" y2="164" class="m"/>
+<line x1="440" y1="98" x2="440" y2="234" class="l"/>
+<line x1="440" y1="98" x2="468" y2="98" class="l" marker-end="url(#ar)"/>
+<line x1="440" y1="164" x2="468" y2="164" class="l" marker-end="url(#ar)"/>
+<line x1="440" y1="234" x2="468" y2="234" class="m" marker-end="url(#am)"/>
+
+<rect x="104" y="292" width="160" height="40" class="b"/>
+<text x="184" y="310" text-anchor="middle" class="a h">85.2%</text>
+<text x="184" y="324" text-anchor="middle" class="s">Accuracy</text>
+<rect x="284" y="292" width="160" height="40" class="b"/>
+<text x="364" y="310" text-anchor="middle" class="a h">0.89</text>
+<text x="364" y="324" text-anchor="middle" class="s">AUC-ROC</text>
+<rect x="464" y="292" width="160" height="40" class="b"/>
+<text x="544" y="310" text-anchor="middle" class="a h">50+</text>
+<text x="544" y="324" text-anchor="middle" class="s">Features</text>
+<text x="16" y="316" class="s">Model</text>
+<text x="16" y="328" class="s">readout</text>
+</svg>

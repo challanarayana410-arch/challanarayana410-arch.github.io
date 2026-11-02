@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+<title>PN-07 FraudShield architecture</title>
+<desc>Blueprint schematic: a React dashboard connects to a Node.js/Express backend (transaction API, WebSocket, rule engine). The backend fans out to MongoDB, a Redis cache and a Python ML service running XGBoost and Isolation Forest.</desc>
+<defs>
+<pattern id="mn" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/></pattern>
+<pattern id="mj" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#EAF3FB" fill-opacity="0.8"/></marker>
+<marker id="k" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#9FDBFF"/></marker>
+<style>
+text{font-family:"IBM Plex Mono",SFMono-Regular,Consolas,monospace;font-size:9px;letter-spacing:0.06em;fill:#EAF3FB;text-transform:uppercase}
+.s{fill-opacity:0.7}
+.t{font-size:10px}
+.b{fill:#0D3B66;fill-opacity:0.92;stroke:#EAF3FB;stroke-opacity:0.7;stroke-width:1}
+.c{fill:none;stroke:#EAF3FB;stroke-opacity:0.5;stroke-width:1;stroke-dasharray:4 3}
+.l{fill:none;stroke:#EAF3FB;stroke-opacity:0.8;stroke-width:1}
+.k{fill:none;stroke:#9FDBFF;stroke-width:1}
+.n{font-size:11px;fill:#9FDBFF;font-weight:bold}
+</style>
+</defs>
+<rect width="640" height="360" fill="#0D3B66"/>
+<rect width="640" height="360" fill="url(#mn)"/>
+<rect width="640" height="360" fill="url(#mj)"/>
+
+<rect x="16" y="16" width="608" height="20" class="b"/>
+<text x="26" y="29" class="t">PN-07 · FRAUDSHIELD · REAL-TIME FRAUD DETECTION</text>
+
+<rect x="16" y="78" width="120" height="126" class="b"/>
+<text x="76" y="132" text-anchor="middle" class="t">React</text>
+<text x="76" y="144" text-anchor="middle" class="t">Dashboard</text>
+<text x="76" y="160" text-anchor="middle" class="s">Live alerts</text>
+<text x="76" y="172" text-anchor="middle" class="s">Case mgmt</text>
+
+<rect x="192" y="48" width="216" height="240" class="c"/>
+<text x="200" y="63" class="t">Node.js / Express</text>
+<rect x="208" y="78" width="184" height="56" class="b"/>
+<text x="218" y="102" class="t">Transaction API</text>
+<text x="218" y="118" class="s">Analyze · list · review</text>
+<rect x="208" y="148" width="184" height="56" class="b"/>
+<text x="218" y="172" class="t">WebSocket</text>
+<text x="218" y="188" class="s">Socket.io · live alerts</text>
+<rect x="208" y="218" width="184" height="56" class="b"/>
+<text x="218" y="242" class="t">Rule engine</text>
+<text x="218" y="258" class="s">Velocity · custom rules</text>
+
+<path d="M136 106H208" class="k" marker-end="url(#k)"/>
+<text x="164" y="100" text-anchor="middle" class="s">REST</text>
+<path d="M136 176H208" class="l" marker-end="url(#a)"/>
+<text x="164" y="170" text-anchor="middle" class="s">WS</text>
+
+<rect x="470" y="48" width="154" height="60" class="b"/>
+<text x="480" y="72" class="t">MongoDB</text>
+<text x="480" y="88" class="s">Transactions · cases</text>
+<rect x="470" y="126" width="154" height="60" class="b"/>
+<text x="480" y="150" class="t">Redis</text>
+<text x="480" y="166" class="s">Cache · rate limit</text>
+
+<rect x="470" y="204" width="154" height="84" class="b" style="stroke:#9FDBFF;stroke-opacity:1"/>
+<text x="480" y="220" class="t">Python ML service</text>
+<text x="480" y="232" class="s">FastAPI</text>
+<rect x="480" y="240" width="134" height="16" class="b"/>
+<text x="488" y="251">XGBoost</text>
+<rect x="480" y="262" width="134" height="16" class="b"/>
+<text x="488" y="273">Isolation forest</text>
+
+<path d="M392 106H430V78H470" class="l" marker-end="url(#a)"/>
+<path d="M392 176H430V156H470" class="l" marker-end="url(#a)"/>
+<path d="M392 246H470" class="k" marker-end="url(#k)"/>
+<text x="431" y="240" text-anchor="middle" class="s">Score</text>
+
+<rect x="16" y="304" width="180" height="32" class="b"/>
+<text x="26" y="324" class="n">100+</text>
+<text x="80" y="324" class="s">Signals per txn</text>
+<rect x="230" y="304" width="180" height="32" class="b"/>
+<text x="240" y="324" class="n">98.2%</text>
+<text x="294" y="324" class="s">XGBoost accuracy</text>
+<rect x="444" y="304" width="180" height="32" class="b"/>
+<text x="454" y="324" class="n">&lt;100MS</text>
+<text x="508" y="324" class="s">Scoring latency</text>
+</svg>

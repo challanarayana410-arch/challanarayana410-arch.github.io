@@ -1,0 +1,57 @@
+{
+  "roles": [
+    {
+      "company": "JPMC",
+      "logo": "assets/images/logos/jpmc.png",
+      "title": "Salesforce Administrator / Developer",
+      "start": "Feb 2025",
+      "end": "Present",
+      "location": "USA (Remote)",
+      "description": "I administer and develop the CRM that supports internal banking workflows and compliance needs, working with business users, QA, IT teams and vendors.",
+      "highlights": [
+        "Coordinate user and license management, including setup, deactivation, roles, profiles and permission access, for 300+ users",
+        "Configure workflows, custom fields, page layouts, record types, dashboards and reports, improving operational efficiency by 30%",
+        "Troubleshoot system issues, configuration errors and access problems, reducing CRM-related incidents by 35%",
+        "Partner with business users to gather requirements and design CRM solutions aligned with banking operations",
+        "Work with QA teams to validate fixes and support UAT cycles, and assist with sprint planning and JIRA tracking"
+      ],
+      "technologies": [
+        "Salesforce",
+        "Workflows",
+        "Dashboards",
+        "Reports",
+        "Record types",
+        "Page layouts",
+        "JIRA",
+        "Agile",
+        "UAT"
+      ]
+    },
+    {
+      "company": "HCL Technologies",
+      "logo": "assets/images/logos/hcl-technologies.svg",
+      "title": "Salesforce CRM Administrator",
+      "start": "Mar 2019",
+      "end": "Jul 2022",
+      "location": "India",
+      "description": "I administered and enhanced enterprise CRM platforms for financial and enterprise clients.",
+      "highlights": [
+        "Configured workflows, business rules, forms, views, dashboards and reports, increasing user adoption by 25%",
+        "Supported data migration and cleansing activities, achieving 98% data accuracy",
+        "Provided hands-on troubleshooting and root cause analysis for system and data issues",
+        "Designed and supported custom CRM solutions aligned with business and compliance requirements",
+        "Participated in Agile/Scrum delivery, supporting sprint reviews, testing and documentation"
+      ],
+      "technologies": [
+        "Salesforce",
+        "Workflows",
+        "Business rules",
+        "Dashboards",
+        "Reports",
+        "Data migration",
+        "Agile",
+        "Scrum"
+      ]
+    }
+  ]
+}

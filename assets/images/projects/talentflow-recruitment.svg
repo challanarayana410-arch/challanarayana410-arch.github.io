@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img">
+<title>PN-09 TalentFlow architecture</title>
+<desc>React and TypeScript frontend calls REST into a Node.js and Express backend with an API server, a BullMQ queue worker and an AI service, over PostgreSQL, Redis and S3.</desc>
+<defs>
+<pattern id="mn" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/></pattern>
+<pattern id="mj" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#EAF3FB" fill-opacity="0.8"/></marker>
+<marker id="k" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#9FDBFF"/></marker>
+<style>
+text{font-family:"IBM Plex Mono",SFMono-Regular,Consolas,monospace;letter-spacing:0.06em;text-transform:uppercase;fill:#EAF3FB;font-size:9px}
+.t{font-size:10px}
+.s{fill-opacity:0.7}
+.k{fill:#9FDBFF}
+.n{font-size:14px;fill:#9FDBFF}
+.b{fill:none;stroke:#EAF3FB;stroke-opacity:0.6;stroke-width:1}
+.c{fill:none;stroke:#EAF3FB;stroke-opacity:0.4;stroke-width:1;stroke-dasharray:4 3}
+.h{fill:none;stroke:#9FDBFF;stroke-width:1}
+.l{fill:none;stroke:#EAF3FB;stroke-opacity:0.8;stroke-width:1}
+</style>
+</defs>
+<rect width="640" height="360" fill="#0D3B66"/>
+<rect width="640" height="360" fill="url(#mn)"/>
+<rect width="640" height="360" fill="url(#mj)"/>
+
+<rect x="16" y="16" width="608" height="20" class="b"/>
+<text x="26" y="29" class="t">PN-09 · TalentFlow · AI Recruitment Pipeline</text>
+
+<rect x="16" y="48" width="608" height="44" class="b"/>
+<text x="28" y="67" class="t">Frontend · React + TypeScript</text>
+<text x="28" y="81" class="s">Jobs · Candidates · Pipeline</text>
+<rect x="360" y="54" width="252" height="32" class="h"/>
+<text x="370" y="67" class="k">Pipeline analytics</text>
+<text x="370" y="79" class="s">Stage conversion · Time/stage</text>
+
+<line x1="120" y1="92" x2="120" y2="140" class="h" marker-end="url(#k)"/>
+<text x="130" y="106" class="k">REST</text>
+
+<rect x="16" y="112" width="608" height="100" class="c"/>
+<text x="612" y="127" text-anchor="end" class="s">Node.js / Express backend</text>
+
+<rect x="32" y="140" width="176" height="62" class="h"/>
+<text x="44" y="165" class="t">API server</text>
+<text x="44" y="181" class="s">Express routes</text>
+<rect x="232" y="140" width="176" height="62" class="b"/>
+<text x="244" y="165" class="t">Queue worker</text>
+<text x="244" y="181" class="s">BullMQ jobs</text>
+<rect x="432" y="140" width="176" height="62" class="b"/>
+<text x="444" y="165" class="t">AI service</text>
+<text x="444" y="181" class="s">Parsing · Matching</text>
+
+<line x1="208" y1="171" x2="232" y2="171" class="l" marker-end="url(#a)"/>
+<line x1="408" y1="171" x2="432" y2="171" class="l" marker-end="url(#a)"/>
+
+<line x1="120" y1="202" x2="120" y2="244" class="h" marker-end="url(#k)"/>
+<line x1="320" y1="202" x2="320" y2="244" class="l" marker-end="url(#a)"/>
+<line x1="520" y1="202" x2="520" y2="244" class="l" marker-end="url(#a)"/>
+<text x="130" y="232" class="k">SQL</text>
+<text x="330" y="232" class="s">Queue</text>
+<text x="530" y="232" class="s">Files</text>
+
+<rect x="32" y="244" width="176" height="44" class="h"/>
+<text x="44" y="263" class="t">PostgreSQL</text>
+<text x="44" y="277" class="s">Primary data</text>
+<rect x="232" y="244" width="176" height="44" class="b"/>
+<text x="244" y="263" class="t">Redis cache</text>
+<text x="244" y="277" class="s">Cache · Queue state</text>
+<rect x="432" y="244" width="176" height="44" class="b"/>
+<text x="444" y="263" class="t">S3 storage</text>
+<text x="444" y="277" class="s">Resume files</text>
+
+<rect x="16" y="308" width="192" height="28" class="b"/>
+<text x="28" y="327" class="n">03</text>
+<text x="56" y="326" class="s">Backend services</text>
+<rect x="224" y="308" width="192" height="28" class="b"/>
+<text x="236" y="327" class="n">03</text>
+<text x="264" y="326" class="s">Data stores</text>
+<rect x="432" y="308" width="192" height="28" class="h"/>
+<text x="444" y="326" class="k">Key path: UI→API→DB</text>
+</svg>

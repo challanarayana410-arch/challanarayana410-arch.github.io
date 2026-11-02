@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img">
+<title>PN-08 WealthWise Robo-Advisor architecture</title>
+<desc>A Next.js 14 frontend with dashboard, portfolio, goals and analytics connects over REST and WebSocket to Next.js API routes containing an API server, an ML service and market data. Readouts: 5% drift rebalancing trigger, 10,000 Monte Carlo simulations.</desc>
+<defs>
+<style>
+.t{font-family:"IBM Plex Mono",SFMono-Regular,Consolas,monospace;font-size:9px;letter-spacing:0.06em;fill:#EAF3FB;text-transform:uppercase}
+.h{font-size:10px}
+.s{opacity:0.7}
+.a{fill:#9FDBFF}
+.n{font-size:11px;fill:#9FDBFF}
+.b{fill:none;stroke:#EAF3FB;stroke-opacity:0.7;stroke-width:1}
+.g{fill:none;stroke:#EAF3FB;stroke-opacity:0.4;stroke-width:1;stroke-dasharray:4 3}
+.k{fill:none;stroke:#9FDBFF;stroke-width:1}
+.l{fill:none;stroke:#EAF3FB;stroke-opacity:0.8;stroke-width:1}
+</style>
+<pattern id="pm" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/></pattern>
+<pattern id="pM" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,1 10,5 0,9" fill="#EAF3FB" fill-opacity="0.85"/></marker>
+<marker id="ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,1 10,5 0,9" fill="#9FDBFF"/></marker>
+</defs>
+<rect width="640" height="360" fill="#0D3B66"/>
+<rect width="640" height="360" fill="url(#pm)"/>
+<rect width="640" height="360" fill="url(#pM)"/>
+
+<rect class="b" x="16" y="16" width="608" height="20"/>
+<text class="t h" x="24" y="30">PN-08 · WEALTHWISE ROBO-ADVISOR · SYSTEM ARCHITECTURE</text>
+<text class="t s" x="616" y="30" text-anchor="end">NEXT.JS 14</text>
+
+<rect class="g" x="16" y="48" width="190" height="280"/>
+<text class="t h" x="28" y="64">NEXT.JS 14 FRONTEND</text>
+<rect class="b" x="32" y="78" width="158" height="49"/>
+<text class="t h" x="44" y="99">DASHBOARD</text>
+<text class="t s" x="44" y="114">BALANCES · ALLOCATION</text>
+<rect class="b" x="32" y="139" width="158" height="49"/>
+<text class="t h" x="44" y="160">PORTFOLIO</text>
+<text class="t s" x="44" y="175">HOLDINGS · REBALANCE</text>
+<rect class="b" x="32" y="200" width="158" height="49"/>
+<text class="t h" x="44" y="221">GOALS</text>
+<text class="t s" x="44" y="236">RETIREMENT · HOUSE</text>
+<rect class="b" x="32" y="261" width="158" height="49"/>
+<text class="t h" x="44" y="282">ANALYTICS</text>
+<text class="t s" x="44" y="297">RISK · FRONTIER</text>
+
+<line class="k" x1="206" y1="110" x2="330" y2="110" marker-start="url(#ac)" marker-end="url(#ac)"/>
+<text class="t a" x="268" y="101" text-anchor="middle">REST · JSON</text>
+<line class="l" x1="206" y1="278" x2="330" y2="278" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text class="t" x="268" y="269" text-anchor="middle">WEBSOCKET</text>
+<text class="t s" x="268" y="293" text-anchor="middle">LIVE QUOTES</text>
+
+<rect class="g" x="330" y="48" width="294" height="280"/>
+<text class="t h" x="342" y="64">NEXT.JS API ROUTES</text>
+
+<rect class="b" x="346" y="78" width="262" height="64"/>
+<text class="t h" x="358" y="99">API SERVER</text>
+<text class="t s" x="358" y="114">PORTFOLIO · GOALS</text>
+<text class="t s" x="358" y="128">REBALANCE ENGINE</text>
+<rect class="k" x="498" y="90" width="98" height="40"/>
+<text class="t n" x="508" y="107">5%</text>
+<text class="t s" x="508" y="122">DRIFT TRIGGER</text>
+
+<rect class="b" x="346" y="162" width="262" height="64"/>
+<text class="t h" x="358" y="183">ML SERVICE</text>
+<text class="t s" x="358" y="198">OPTIMIZER · MPT</text>
+<text class="t s" x="358" y="212">MONTE CARLO</text>
+<rect class="k" x="498" y="174" width="98" height="40"/>
+<text class="t n" x="508" y="191">10,000</text>
+<text class="t s" x="508" y="206">SIMULATIONS</text>
+
+<rect class="b" x="346" y="246" width="262" height="64"/>
+<text class="t h" x="358" y="267">MARKET DATA</text>
+<text class="t s" x="358" y="282">QUOTES · HISTORICAL</text>
+<text class="t s" x="358" y="296">PRICE FEEDS</text>
+
+<line class="k" x1="420" y1="162" x2="420" y2="142" marker-end="url(#ac)"/>
+<text class="t s" x="432" y="155">RESULTS</text>
+<line class="l" x1="420" y1="246" x2="420" y2="226" marker-end="url(#ar)"/>
+<text class="t s" x="432" y="239">PRICES</text>
+
+<text class="t s" x="16" y="342">SHEET 1/1 · NTS</text>
+<text class="t s" x="624" y="342" text-anchor="end">BLUEPRINT · REV A</text>
+</svg>

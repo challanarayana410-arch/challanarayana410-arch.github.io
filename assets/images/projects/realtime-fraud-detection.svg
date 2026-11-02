@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+<title>PN-03 Real-Time Fraud Detection Pipeline</title>
+<desc>Transaction sources flow into Kafka, then PySpark Streaming fraud scoring. Scoring writes to Cassandra, Redshift, a DLQ and a Grafana dashboard with alerts. 5 weighted rules, 14 tests passed.</desc>
+<defs>
+<style>
+text{font-family:"IBM Plex Mono",SFMono-Regular,Consolas,monospace;letter-spacing:0.06em;fill:#EAF3FB;text-transform:uppercase}
+.p{font-size:10px}
+.s{font-size:9px;opacity:0.7}
+.m{text-anchor:middle}
+.b{fill:#0D3B66;stroke:#EAF3FB;stroke-opacity:0.7;stroke-width:1}
+.a{fill:none;stroke:#9FDBFF;stroke-width:1}
+.l{fill:none;stroke:#EAF3FB;stroke-opacity:0.6;stroke-width:1}
+.n{font-size:11px;fill:#9FDBFF}
+</style>
+<pattern id="mi" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/></pattern>
+<pattern id="ma" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><polygon points="0,0 8,4 0,8" fill="#9FDBFF"/></marker>
+<marker id="al" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><polygon points="0,0 8,4 0,8" fill="#EAF3FB" fill-opacity="0.8"/></marker>
+</defs>
+<rect width="640" height="360" fill="#0D3B66"/>
+<rect width="640" height="360" fill="url(#mi)"/>
+<rect width="640" height="360" fill="url(#ma)"/>
+
+<rect x="16" y="16" width="608" height="24" class="b"/>
+<text x="26" y="32" class="p">PN-03 · REAL-TIME FRAUD DETECTION PIPELINE</text>
+<text x="614" y="32" class="s" text-anchor="end">KAFKA → SPARK → SINKS</text>
+
+<rect x="16" y="160" width="88" height="48" class="b"/>
+<text x="60" y="181" class="p m">SOURCES</text>
+<text x="60" y="195" class="s m">TRANSACTIONS</text>
+
+<rect x="136" y="160" width="88" height="48" class="b"/>
+<text x="180" y="181" class="p m">KAFKA</text>
+<text x="180" y="195" class="s m">INGEST</text>
+
+<rect x="272" y="134" width="128" height="100" class="b" style="stroke:#9FDBFF;stroke-opacity:1"/>
+<text x="336" y="170" class="p m">PYSPARK</text>
+<text x="336" y="184" class="p m">STREAMING</text>
+<text x="336" y="204" class="s m">FRAUD SCORING</text>
+
+<line x1="104" y1="184" x2="136" y2="184" class="a" marker-end="url(#ah)"/>
+<line x1="224" y1="184" x2="272" y2="184" class="a" marker-end="url(#ah)"/>
+<line x1="400" y1="184" x2="424" y2="184" class="a"/>
+<line x1="424" y1="88" x2="424" y2="280" class="a"/>
+<circle cx="424" cy="184" r="2.5" fill="#9FDBFF"/>
+<line x1="424" y1="88" x2="448" y2="88" class="a" marker-end="url(#ah)"/>
+<line x1="424" y1="152" x2="448" y2="152" class="a" marker-end="url(#ah)"/>
+<line x1="424" y1="216" x2="448" y2="216" class="l" stroke-dasharray="4 3" marker-end="url(#al)"/>
+<line x1="424" y1="280" x2="448" y2="280" class="l" marker-end="url(#al)"/>
+
+<rect x="448" y="64" width="176" height="48" class="b"/>
+<text x="460" y="85" class="p">CASSANDRA</text>
+<text x="460" y="99" class="s">REAL-TIME LOOKUPS</text>
+<rect x="448" y="128" width="176" height="48" class="b"/>
+<text x="460" y="149" class="p">REDSHIFT</text>
+<text x="460" y="163" class="s">ANALYTICS STORE</text>
+<rect x="448" y="192" width="176" height="48" class="b" stroke-dasharray="4 3"/>
+<text x="460" y="213" class="p">DLQ</text>
+<text x="460" y="227" class="s">FAILED RECORDS</text>
+<rect x="448" y="256" width="176" height="48" class="b"/>
+<text x="460" y="277" class="p">GRAFANA</text>
+<text x="460" y="291" class="s">DASHBOARD + ALERTS</text>
+
+<line x1="336" y1="234" x2="336" y2="262" class="l" stroke-dasharray="2 3"/>
+<polyline points="236,288 236,262 372,262 372,288" class="l" stroke-dasharray="2 3"/>
+
+<rect x="176" y="288" width="120" height="36" class="b" style="stroke:#9FDBFF"/>
+<text x="188" y="303" class="n">5</text>
+<text x="188" y="316" class="s">WEIGHTED RULES</text>
+<rect x="312" y="288" width="120" height="36" class="b" style="stroke:#9FDBFF"/>
+<text x="324" y="303" class="n">14</text>
+<text x="324" y="316" class="s">TESTS PASSED</text>
+</svg>

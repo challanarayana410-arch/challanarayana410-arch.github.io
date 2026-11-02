@@ -1,0 +1,96 @@
+{
+  "groups": [
+    {
+      "name": "Data & Databases",
+      "items": [
+        "SQL",
+        "SOQL",
+        "SOSL",
+        "Data Modeling",
+        "Data Migration",
+        "Data Cleansing",
+        "Data Loaders",
+        "Excel",
+        "Oracle",
+        "SQL Server",
+        "DB2"
+      ]
+    },
+    {
+      "name": "Salesforce Platform",
+      "items": [
+        "Salesforce CRM",
+        "Sales Cloud",
+        "Service Cloud",
+        "Experience Cloud",
+        "Lightning",
+        "Visualforce",
+        "LWC",
+        "Aura Components",
+        "OmniStudio"
+      ]
+    },
+    {
+      "name": "Automation",
+      "items": [
+        "Flow",
+        "Process Builder",
+        "Workflow Rules",
+        "Apex Triggers",
+        "Apex Classes"
+      ]
+    },
+    {
+      "name": "Languages",
+      "items": [
+        "Apex",
+        "SQL",
+        "Java",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Integration",
+      "items": [
+        "RESTful APIs",
+        "SOAP",
+        "MuleSoft",
+        "Heroku",
+        "Zapier"
+      ]
+    },
+    {
+      "name": "Tools & Version Control",
+      "items": [
+        "Salesforce DX",
+        "Git",
+        "GitHub",
+        "Jenkins",
+        "Flosum",
+        "JIRA",
+        "Workbench",
+        "Force.com IDE",
+        "Eclipse"
+      ]
+    },
+    {
+      "name": "Methodologies",
+      "items": [
+        "Agile",
+        "Scrum",
+        "SDLC"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "items": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ]
+    }
+  ]
+}

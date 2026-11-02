@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img">
+<title>PN-02 Enterprise Customer Management Platform: system architecture</title>
+<desc>Request path from a React 18 SPA through an axios client and nginx reverse proxy into a Spring Boot 3.3 API (JWT filter, controllers, services, Caffeine cache, Spring Data JPA) and on to MySQL 8, whose schema is owned by Flyway. Readouts: 4 roles, 9 SQL statements per dashboard, 60-second cache.</desc>
+<defs>
+<pattern id="mn" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/></pattern>
+<pattern id="mj" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#EAF3FB" fill-opacity="0.8"/></marker>
+<marker id="k" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#9FDBFF"/></marker>
+<style>
+text{font-family:"IBM Plex Mono",SFMono-Regular,Consolas,monospace;fill:#EAF3FB;letter-spacing:0.06em;text-transform:uppercase;font-size:10px}
+.s{font-size:9px;fill-opacity:0.7}
+.t{text-anchor:middle}
+.b{fill:#0D3B66;stroke:#EAF3FB;stroke-opacity:0.6;stroke-width:1}
+.kb{fill:#0D3B66;stroke:#9FDBFF;stroke-opacity:0.9;stroke-width:1}
+.r{fill:#0D3B66;stroke:#9FDBFF;stroke-width:1}
+.n{fill:#9FDBFF;font-size:11px}
+.l{fill:none;stroke:#EAF3FB;stroke-opacity:0.7;stroke-width:1}
+.kl{fill:none;stroke:#9FDBFF;stroke-width:1}
+</style>
+</defs>
+<rect width="640" height="360" fill="#0D3B66"/>
+<rect width="640" height="360" fill="url(#mn)"/>
+<rect width="640" height="360" fill="url(#mj)"/>
+
+<rect x="16" y="16" width="608" height="20" class="b"/>
+<text x="26" y="30">PN-02 · Enterprise Customer Management Platform · System Architecture</text>
+
+<rect x="16" y="50" width="130" height="48" class="kb"/>
+<text x="81" y="70" class="t">React 18 SPA</text>
+<text x="81" y="84" class="t s">TypeScript</text>
+<rect x="186" y="50" width="130" height="48" class="kb"/>
+<text x="251" y="70" class="t">Axios client</text>
+<text x="251" y="84" class="t s">Bearer + refresh</text>
+<rect x="356" y="50" width="130" height="48" class="kb"/>
+<text x="421" y="70" class="t">Nginx proxy</text>
+<text x="421" y="84" class="t s">Static + /api</text>
+
+<rect x="512" y="50" width="112" height="48" class="b"/>
+<line x1="522" y1="66" x2="546" y2="66" class="kl"/>
+<text x="554" y="69" class="s">Key path</text>
+<line x1="522" y1="84" x2="546" y2="84" class="l" stroke-dasharray="4 3"/>
+<text x="554" y="87" class="s">Cache miss</text>
+
+<line x1="146" y1="74" x2="185" y2="74" class="kl" marker-end="url(#k)"/>
+<line x1="316" y1="74" x2="355" y2="74" class="kl" marker-end="url(#k)"/>
+<polyline points="421,98 421,150 87,150 87,169" class="kl" marker-end="url(#k)"/>
+<text x="429" y="130" class="s">Proxy /api</text>
+
+<rect x="16" y="112" width="608" height="172" fill="none" stroke="#EAF3FB" stroke-opacity="0.4" stroke-dasharray="6 3"/>
+<text x="32" y="128">Spring Boot 3.3 API · Java 21</text>
+
+<rect x="32" y="170" width="110" height="48" class="kb"/>
+<text x="87" y="190" class="t">JWT filter</text>
+<text x="87" y="204" class="t s">Verify signature</text>
+<rect x="172" y="170" width="110" height="48" class="kb"/>
+<text x="227" y="190" class="t">Controllers</text>
+<text x="227" y="204" class="t s">@PreAuthorize</text>
+<rect x="312" y="170" width="110" height="48" class="kb"/>
+<text x="367" y="190" class="t">Services</text>
+<text x="367" y="204" class="t s">@Transactional</text>
+
+<line x1="142" y1="194" x2="171" y2="194" class="kl" marker-end="url(#k)"/>
+<line x1="282" y1="194" x2="311" y2="194" class="kl" marker-end="url(#k)"/>
+
+<rect x="466" y="140" width="140" height="40" class="b"/>
+<text x="536" y="157" class="t">Caffeine cache</text>
+<text x="536" y="171" class="t s">Dashboard · ref data</text>
+<rect x="466" y="232" width="140" height="40" class="kb"/>
+<text x="536" y="249" class="t">Spring Data JPA</text>
+<text x="536" y="263" class="t s">Specification</text>
+
+<polyline points="422,194 446,194 446,160 465,160" class="l" marker-end="url(#a)"/>
+<polyline points="446,194 446,252 465,252" class="kl" marker-end="url(#k)"/>
+<line x1="490" y1="180" x2="490" y2="231" class="l" stroke-dasharray="4 3" marker-end="url(#a)"/>
+
+<rect x="172" y="236" width="110" height="24" class="r"/>
+<text x="227" y="252" class="t"><tspan class="n">4</tspan> Roles</text>
+<rect x="312" y="236" width="110" height="24" class="r"/>
+<text x="367" y="252" class="t s" style="fill-opacity:1"><tspan class="n">9</tspan> SQL / dashboard</text>
+<rect x="510" y="192" width="96" height="26" class="r"/>
+<text x="558" y="209" class="t"><tspan class="n">60 s</tspan> TTL</text>
+
+<line x1="536" y1="272" x2="536" y2="296" class="kl" marker-end="url(#k)"/>
+<path d="M466 302V338A70 5 0 0 0 606 338V302" class="b"/>
+<ellipse cx="536" cy="302" rx="70" ry="5" class="b"/>
+<text x="536" y="320" class="t">MySQL 8</text>
+<text x="536" y="333" class="t s">Flyway-owned schema</text>
+
+<rect x="312" y="300" width="130" height="44" class="b"/>
+<text x="377" y="319" class="t">Flyway</text>
+<text x="377" y="333" class="t s">Versioned migrations</text>
+<line x1="442" y1="322" x2="465" y2="322" class="l" marker-end="url(#a)"/>
+</svg>

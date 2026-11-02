@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://challanarayana410-arch.github.io/sitemap.xml

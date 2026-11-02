@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img">
+<title>PN-04 SupportIQ Analytics system architecture</title>
+<desc>React client talks to a Node.js/Express server over REST and Socket.io. The server uses PostgreSQL via Prisma and a Redis cache, and calls a Python FastAPI ML service for sentiment, categorization and forecasting. The 7-day volume forecast is the key output.</desc>
+<defs>
+<pattern id="mn" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#EAF3FB" stroke-opacity="0.05" stroke-width="1"/></pattern>
+<pattern id="mj" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80 0H0V80" fill="none" stroke="#EAF3FB" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" fill="#EAF3FB" fill-opacity="0.8"/></marker>
+<marker id="k" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" fill="#9FDBFF"/></marker>
+<style>
+text{font-family:"IBM Plex Mono",SFMono-Regular,Consolas,monospace;font-size:9px;letter-spacing:0.06em;text-transform:uppercase;fill:#EAF3FB}
+.h{font-size:10px}
+.s{fill-opacity:0.7}
+.k{fill:#9FDBFF}
+.b{fill:none;stroke:#EAF3FB;stroke-opacity:0.6;stroke-width:1}
+.i{fill:none;stroke:#EAF3FB;stroke-opacity:0.4;stroke-width:1}
+.l{fill:none;stroke:#EAF3FB;stroke-opacity:0.8;stroke-width:1}
+.ka{fill:none;stroke:#9FDBFF;stroke-width:1}
+</style>
+</defs>
+<rect width="640" height="360" fill="#0D3B66"/>
+<rect width="640" height="360" fill="url(#mn)"/>
+<rect width="640" height="360" fill="url(#mj)"/>
+
+<rect class="b" x="16" y="16" width="608" height="20"/>
+<text class="h" x="24" y="30">PN-04 · SupportIQ Analytics · System architecture</text>
+
+<rect class="b" x="16" y="104" width="120" height="144"/>
+<text class="h" x="24" y="121">React client</text>
+<rect class="i" x="24" y="134" width="104" height="24"/>
+<text x="32" y="149">Recharts</text>
+<rect class="i" x="24" y="170" width="104" height="24"/>
+<text x="32" y="185">TanStack Query</text>
+<rect class="i" x="24" y="206" width="104" height="24"/>
+<text x="32" y="221">Zustand</text>
+
+<rect class="b" x="216" y="104" width="176" height="144"/>
+<text class="h" x="224" y="121">Node.js · Express</text>
+<rect class="i" x="224" y="134" width="160" height="24"/>
+<text x="232" y="149">Routes · Auth</text>
+<rect class="i" x="224" y="170" width="160" height="24"/>
+<text x="232" y="185">Socket.io server</text>
+<rect class="i" x="224" y="206" width="160" height="24"/>
+<text x="232" y="221">Prisma ORM</text>
+
+<rect class="b" x="472" y="88" width="152" height="192"/>
+<text class="h" x="480" y="105">FastAPI ML service</text>
+<rect class="i" x="480" y="124" width="136" height="40"/>
+<text x="488" y="141">Sentiment</text>
+<text class="s" x="488" y="155">VADER</text>
+<rect class="i" x="480" y="176" width="136" height="40"/>
+<text x="488" y="193">Categorization</text>
+<text class="s" x="488" y="207">Custom · opt. GPT-4</text>
+<rect class="ka" x="480" y="228" width="136" height="40"/>
+<text class="k" x="488" y="245">Forecasting</text>
+<text class="s" x="488" y="259">Time series</text>
+
+<rect class="b" x="216" y="288" width="80" height="44"/>
+<text class="h" x="224" y="306">PostgreSQL</text>
+<text class="s" x="224" y="321">Primary DB</text>
+<rect class="b" x="312" y="288" width="80" height="44"/>
+<text class="h" x="320" y="306">Redis</text>
+<text class="s" x="320" y="321">Cache</text>
+
+<line class="l" x1="136" y1="146" x2="216" y2="146" marker-end="url(#a)"/>
+<text class="s" x="176" y="139" text-anchor="middle">REST /API</text>
+<line class="l" x1="136" y1="182" x2="216" y2="182" marker-start="url(#a)" marker-end="url(#a)"/>
+<text class="s" x="176" y="175" text-anchor="middle">Socket.io</text>
+<text class="s" x="176" y="197" text-anchor="middle">Realtime</text>
+
+<line class="l" x1="392" y1="146" x2="480" y2="146" marker-end="url(#a)"/>
+<text class="s" x="436" y="139" text-anchor="middle">HTTP/JSON</text>
+<line class="ka" x1="392" y1="248" x2="480" y2="248" marker-start="url(#k)" marker-end="url(#k)"/>
+<text class="k" x="436" y="241" text-anchor="middle">Forecast</text>
+
+<line class="l" x1="256" y1="248" x2="256" y2="288" marker-start="url(#a)" marker-end="url(#a)"/>
+<text class="s" x="262" y="272">Prisma</text>
+<line class="l" x1="352" y1="248" x2="352" y2="288" marker-start="url(#a)" marker-end="url(#a)"/>
+<text class="s" x="358" y="272">Cache</text>
+
+<line class="ka" x1="548" y1="280" x2="548" y2="292" marker-end="url(#k)"/>
+<rect class="ka" x="472" y="292" width="152" height="40"/>
+<text class="k h" x="480" y="309">7-day</text>
+<text class="s" x="480" y="323">Volume forecast</text>
+</svg>

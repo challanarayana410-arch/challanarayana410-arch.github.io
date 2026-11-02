@@ -1,0 +1,47 @@
+{
+  "name": "Narayana Challa",
+  "title": "Salesforce Admin/Developer · CRM Reporting, Dashboards & Data",
+  "summary": "I'm a Salesforce administrator and developer with 4+ years of enterprise CRM experience supporting banking and financial services users. I configure workflows, dashboards and reports, run data migration and cleansing, and turn business requirements into CRM solutions that improve productivity and ROI.",
+  "location": "USA",
+  "readouts": [
+    {
+      "value": "300+",
+      "label": "users managed at JPMC"
+    },
+    {
+      "value": "35%",
+      "label": "fewer CRM-related incidents at JPMC"
+    },
+    {
+      "value": "30%",
+      "label": "operational efficiency gain at JPMC"
+    },
+    {
+      "value": "98%",
+      "label": "data accuracy in migration at HCL"
+    }
+  ],
+  "ctas": [
+    {
+      "label": "View projects",
+      "href": "#projects",
+      "kind": "primary"
+    },
+    {
+      "label": "Resume",
+      "href": "assets/files/narayana-challa-resume.pdf",
+      "kind": "resume"
+    },
+    {
+      "label": "Get in touch",
+      "href": "#contact",
+      "kind": "secondary"
+    }
+  ],
+  "social": {
+    "github": "https://github.com/challanarayana410-arch",
+    "linkedin": "https://www.linkedin.com/in/challanarayana/",
+    "email": "challa.narayana410@gmail.com",
+    "phone": "+1 (551-998-7735)"
+  }
+}

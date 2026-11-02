@@ -1,0 +1,245 @@
+{
+  "projects": [
+    {
+      "name": "metricregistry",
+      "category": "KPI governance",
+      "description": "A KPI registry in which each metric is stored as executable, versioned SQL with an owner, grain and tolerance. A divergence monitor compares definitions of the same subject and alerts when they drift apart.",
+      "highlights": [
+        "Flags any pair whose gap exceeds the tighter of the two tolerances (default 0.5%)",
+        "Demo surfaces a 6.80% gap between marketing and registrar enrolment counts",
+        "16 tests check definitions against independent ground-truth counts"
+      ],
+      "technologies": [
+        "Python",
+        "SQL",
+        "SQLite",
+        "unittest"
+      ],
+      "links": {
+        "source": "https://github.com/challanarayana410-arch/metricregistry"
+      },
+      "image": "assets/images/projects/metricregistry.svg",
+      "hero": {
+        "src": "assets/images/projects/metricregistry-hero.jpg",
+        "alt": "metricregistry — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "Enterprise Customer Management Platform",
+      "category": "CRM & pipeline analytics",
+      "description": "A B2B CRM covering accounts, contacts, interactions and a deal pipeline, with four-role access control. It runs on a Spring Boot REST API and a React SPA, and deploys to AWS ECS Fargate with Terraform.",
+      "highlights": [
+        "Pipeline dashboard runs nine SQL aggregate statements behind a 60-second cache",
+        "Six composable filters each on contacts and accounts, with page size capped at 100",
+        "Two-level authorization across four roles, plus audit columns on every record"
+      ],
+      "technologies": [
+        "Java 21",
+        "Spring Boot 3.3",
+        "React 18",
+        "TypeScript",
+        "MySQL 8",
+        "Terraform"
+      ],
+      "links": {
+        "source": "https://github.com/challanarayana410-arch/enterprise-customer-management-platform"
+      },
+      "image": "assets/images/projects/enterprise-customer-management-platform.svg",
+      "hero": {
+        "src": "assets/images/projects/enterprise-customer-management-platform-hero.jpg",
+        "alt": "Enterprise Customer Management Platform — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "Real-Time Fraud Detection Pipeline",
+      "category": "Streaming analytics",
+      "description": "A streaming pipeline that scores transactions with a weighted multi-rule fraud engine on PySpark Structured Streaming. It dual-writes results to Cassandra for real-time lookups and to Redshift for analytics.",
+      "highlights": [
+        "Five weighted rules: high amount, velocity, geo anomaly, card testing and time anomaly",
+        "14 unit tests passed across 6 test suites",
+        "Dead letter queue for failed records, with Grafana fraud-rate monitoring"
+      ],
+      "technologies": [
+        "Python",
+        "Apache Kafka",
+        "PySpark",
+        "Cassandra",
+        "Redshift",
+        "Grafana"
+      ],
+      "links": {
+        "source": "https://github.com/challanarayana410-arch/realtime-fraud-detection"
+      },
+      "image": "assets/images/projects/realtime-fraud-detection.svg",
+      "hero": {
+        "src": "assets/images/projects/realtime-fraud-detection-hero.jpg",
+        "alt": "Real-Time Fraud Detection Pipeline — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "SupportIQ Analytics",
+      "category": "Support analytics",
+      "description": "A customer support analytics dashboard that categorizes tickets, scores sentiment and forecasts ticket volume, so teams can plan staffing and track agent performance.",
+      "highlights": [
+        "Forecasts ticket volume 7 days ahead",
+        "Sentiment scoring with VADER, plus sentiment trend charts",
+        "Customer health scores and an agent performance leaderboard"
+      ],
+      "technologies": [
+        "TypeScript",
+        "React 18",
+        "Node.js",
+        "PostgreSQL",
+        "Prisma",
+        "FastAPI"
+      ],
+      "links": {
+        "source": "https://github.com/challanarayana410-arch/supportiq-analytics"
+      },
+      "image": "assets/images/projects/supportiq-analytics.svg",
+      "hero": {
+        "src": "assets/images/projects/supportiq-analytics-hero.jpg",
+        "alt": "SupportIQ Analytics — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "MedInsight Healthcare Analytics",
+      "category": "Healthcare analytics",
+      "description": "A predictive analytics dashboard that identifies patients at high risk of 30-day readmission before discharge. It includes risk stratification and population health views.",
+      "highlights": [
+        "Random Forest model listed at 85.2% accuracy and 0.89 AUC-ROC",
+        "Model draws on 50+ features from demographics, clinical data and patient history",
+        "SHAP explainability for each risk score"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Next.js 14",
+        "PostgreSQL",
+        "TimescaleDB",
+        "scikit-learn"
+      ],
+      "links": {
+        "source": "https://github.com/challanarayana410-arch/healthcare-analytics"
+      },
+      "image": "assets/images/projects/healthcare-analytics.svg",
+      "hero": {
+        "src": "assets/images/projects/healthcare-analytics-hero.jpg",
+        "alt": "MedInsight Healthcare Analytics — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "FlavorMetrics",
+      "category": "Restaurant analytics",
+      "description": "A restaurant analytics platform that turns POS and operational data into menu engineering, demand forecasting, food cost tracking and customer segmentation.",
+      "highlights": [
+        "Menu engineering matrix of profitability versus popularity",
+        "7-day cover predictions and item-level demand forecasts",
+        "RFM segmentation and churn prediction for customers"
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Express",
+        "Python"
+      ],
+      "links": {
+        "source": "https://github.com/challanarayana410-arch/flavormetrics-restaurant-analytics",
+        "demo": "https://flavormetrics-demo.vercel.app"
+      },
+      "image": "assets/images/projects/flavormetrics-restaurant-analytics.svg",
+      "hero": {
+        "src": "assets/images/projects/flavormetrics-restaurant-analytics-hero.jpg",
+        "alt": "FlavorMetrics — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "FraudShield",
+      "category": "Fraud analytics",
+      "description": "An e-commerce fraud detection system that scores transactions with an ML ensemble and a customizable rule engine. It includes an anomaly dashboard and case management for flagged transactions.",
+      "highlights": [
+        "XGBoost classifier listed at 98.2% accuracy",
+        "Analyzes 100+ signals per transaction",
+        "Isolation Forest model for detecting new fraud patterns"
+      ],
+      "technologies": [
+        "TypeScript",
+        "React 18",
+        "Node.js",
+        "MongoDB",
+        "Redis",
+        "XGBoost"
+      ],
+      "links": {
+        "source": "https://github.com/challanarayana410-arch/fraud-detection-system"
+      },
+      "image": "assets/images/projects/fraud-detection-system.svg",
+      "hero": {
+        "src": "assets/images/projects/fraud-detection-system-hero.jpg",
+        "alt": "FraudShield — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "WealthWise Robo-Advisor",
+      "category": "Portfolio analytics",
+      "description": "A robo-advisor that builds portfolios from a risk assessment, then handles rebalancing, tax-loss harvesting and goal-based planning.",
+      "highlights": [
+        "Monte Carlo retirement simulation across 10,000 market runs",
+        "Rebalancing triggers when allocations drift more than 5%",
+        "Efficient frontier and Sharpe ratio optimization"
+      ],
+      "technologies": [
+        "Next.js 14",
+        "TypeScript",
+        "REST API",
+        "WebSocket"
+      ],
+      "links": {
+        "source": "https://github.com/challanarayana410-arch/wealthwise-robo-advisor",
+        "demo": "https://wealthwise-demo.vercel.app"
+      },
+      "image": "assets/images/projects/wealthwise-robo-advisor.svg",
+      "hero": {
+        "src": "assets/images/projects/wealthwise-robo-advisor-hero.jpg",
+        "alt": "WealthWise Robo-Advisor — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "TalentFlow",
+      "category": "Recruitment analytics",
+      "description": "A recruitment pipeline platform with resume parsing, semantic job matching, interview scheduling and funnel analytics for spotting hiring bottlenecks.",
+      "highlights": [
+        "Pipeline analytics with stage conversion rates and average time per stage",
+        "Semantic candidate matching with sentence-transformer embeddings",
+        "Diversity metrics tracked by pipeline stage"
+      ],
+      "technologies": [
+        "React 18",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "BullMQ"
+      ],
+      "links": {
+        "source": "https://github.com/challanarayana410-arch/talentflow-recruitment",
+        "demo": "https://talentflow-demo.vercel.app"
+      },
+      "image": "assets/images/projects/talentflow-recruitment.svg",
+      "hero": {
+        "src": "assets/images/projects/talentflow-recruitment-hero.jpg",
+        "alt": "TalentFlow — Concept render",
+        "caption": "Concept render"
+      }
+    }
+  ]
+}
